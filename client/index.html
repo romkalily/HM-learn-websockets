@@ -1,0 +1,21 @@
+<!doctype html>
+<html class='no-js' lang=''>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <div id='chat'>
+        sausages
+        <ul id="messages"></ul>
+        <h5 id="typing" style="display: none;">cook sausage</h5>
+        <input onkeypress="handleKeyPress()" id='message' type='text' />
+        <button onclick="handleSubmitNewMessage()">send sausage</button>
+        <button ondblclick="handleDisconnect()">disconnect</button>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js'></script>
+    <script src='./chat.js'></script>
+</body>
+</html>
